@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Zambezi Matthew Brozen Dev Test</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" id="top">
+    <div class="container">
+      <div class="navbar-brand">Quote Machine</div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="process.html">The Process</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.matthewbrozen.com" target="_blank">About Matt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+      <div class="col-lg-12 text-center darkTheme" >
+        <h1 class="pt-2 pb-2">Welcome To Quote Bot!</h1>
+      </div>
+
+      <div class="container darkTheme">
+          <div class="row">
+            <div class="col-lg-6 text-center">
+              <img id="randonRobot">
+              <div class="text-center">
+                <img id="gpsMap" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s(-122.4033477,37.7904462)/-122.337798,37.810550,9.67,0.00,0.00/300x75?access_token=pk.eyJ1Ijoic2VhbnAiLCJhIjoiY2p1MDY1YmljM2NnMjN6bXVnZXRpeGdvdSJ9.om-OkYVrL4-GyeWA3Evj2g">
+                <p id="imgText">I was built in <span id="city"></span> San Francisco to find quotes for you. Rate each quote and I will try to find even better ones.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <h2 id="commands" class="pt-5 pb-2"> Robot Commands </h2>
+              <button id="read" type="button" class="btn btn-outline-info "> Read This Quote</button>
+              <button id="past" type="button" class="btn btn-outline-info"> Show Past Quotes</button>
+            <div>
+
+                <h2 id="newQuote" class="pt-5 pb-2"> Random Quote </h2>
+                <p><i id="author"></i></p>
+                <button type="button" class="btn btn-danger" id="lame"> Lame</button>
+                <button type="button" class=  "btn btn-warning" id="meh"> Meh...</button>
+                <button type="button" class="btn btn-success" id="great">Great!</button>
+                <!-- <button type="button" class="btn btn-success" id="populate">populate!</button> -->
+              </div>
+              <div id="pastQuotes">
+                <br><br>
+                <button id="hide" type="button" class="btn btn-outline-info mb-4"> Hide Past Quotes</button>
+                <h2 class="mb-4"> Past Quotes</h2>
+                <ul class="list-group" id="quoteList">
+                </ul>
+            </div>
+            </div>
+            </div>
+          </div>
+      <!-- <audio id="myAudio"></audio> -->
+      <div id="audioPlayer"></div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+
+  <script src="firebase.js"></script>
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>

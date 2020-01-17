@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:black;
+}
+
+.darkTheme{
+    background-color:black;
+    color:ghostwhite;
+}
+
+#imgText{
+    margin-top: 2%;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+#quoteText{
+    font-size:20px;
+    font-weight:300;
+}
+
+#pastQuotes{
+    display:none;
+}
+
+.list{
+    border:1px solid white;
+}
+
+#randonRobot{
+    border-radius: 25px 25px 0 0;
+}
+
+#gpsMap{
+    border-radius: 0 0 25px 25px;
+}
+
+@media (max-width: 768px) {
+    .btn, .btn-group {
+        width:100%;
+        margin-bottom:2%;
+    }
+
+    .randonRobot{
+        height:200px;
+        width:80%;
+    }
+
+}
