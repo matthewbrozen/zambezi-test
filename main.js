@@ -157,8 +157,10 @@ function readText(){
     var quote = $("#quoteText").text();
     $.get("https://api.voicerss.org/?key=fb5a9028b25d4ca39c26bd2f75897356&hl=en-us&b64=true&src="+quote, function(data, status){
 
-        setTimeout(function(){         $('#audioPlayer').append('<audio id="myAudio" src='+data+'></audio>'); }, 1250);
-        }); 
+
+        $('#audioPlayer').append('<audio id="myAudio" src='+data+'></audio>');
+});
+
 }; 
 
 $("#read").click(function(){
@@ -166,10 +168,13 @@ $("#read").click(function(){
 
     readText() 
 
+    // var audio = document.getElementById("myAudio");
+    // audio.play();
+
     setTimeout(function(){ 
         var audio = document.getElementById("myAudio");
         audio.play();
-    }, 1725);
+    }, 1000);
 });
 
 
